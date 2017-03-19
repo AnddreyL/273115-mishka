@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="header-top  container">
+      <nav class="nav-top">
+        <img src="#" alt="" class="nav-top__logo">
+        <button type="button" class="nav-top__btn">Меню</button>
+        <ul class="nav-top__list  nav-top__list--1">
+          <li><a href="/catalog.html">Каталог товаров</a></li>
+          <li><a>Вязание на заказ</a></li>
+        </ul>
+        <ul class="nav-top__list  nav-top__list--2">
+          <li><a class="nav-top__search" href="#">Поиск по сайту</a></li>
+          <li><a class="nav-top__cart" href="#">Корзина пока пуста</a></li>
+        </ul>
+      </nav>
+      <h1 class="header-top__title">Вязание на заказ</h1>
+    </header>
+    <main>
+      <p class="form-text  container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="orderform  container">
+          <span class="subject  subject--form">Тип</span><br>
+          <input class="orderform__radio" type="radio" name="type" id="acces" checked>
+          <label for="acces">Аксессуар для интерьера</label><br>
+          <input class="orderform__radio" type="radio" name="type" id="child" checked>
+          <label for="child">Детская игрушка</label><br>
+          <span class="subject  subject--form">Цвет</span><br>
+          <input class="orderform__checkbox" type="checkbox" name="white" id="white-id" checked>
+          <label for="white-id">Белый</label><br>
+          <input class="orderform__checkbox" type="checkbox" name="gray" id="gray-id" checked>
+          <label for="gray-id">Серый</label><br>
+          <input class="orderform__checkbox" type="checkbox" name="tiffany" id="tiffany-id">
+          <label for="tiffany-id">&#171;Тиффани&#187;</label><br>
+          <input class="orderform__checkbox" type="checkbox" name="black" id="black-id">
+          <label for="black-id">Черный</label><br>
+          <input class="orderform__checkbox" type="checkbox" name="pink" id="pink-id">
+          <label for="pink-id">Розовый</label><br>
+          <input class="orderform__checkbox" type="checkbox" name="orange" id="orange-id">
+          <label for="orange-id">Оранжевй</label><br>
+          <span class="subject  subject--form">ФИО</span><br>
+          <label for="name-id">Имя:</label><br>
+          <input class="orderform__text" type="text" name="name" id="name-id" placeholder="Введите ваше имя&#42;" required><br>
+          <label for="surname-id">Фамилия:</label><br>
+          <input class="orderform__text" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию&#42;" required><br>
+          <label for="midname-id">Отчество:</label><br>
+          <input class="orderform__text" type="text" name="midname" id="midname-id" placeholder="Отчество, если желаете"><br>
+          <span class="subject  subject--form">Тел</span><br>
+          <input class="orderform__text  orderform__text--tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XX XX&#42;" required><br>
+          <span class="subject  subject--form">E-mail</span><br>
+          <input class="orderform__text  orderform__text--email" type="email" name="e-mail" id="e-mail-id" placeholder="Ваш Email&#42;" required><br>
+          <span class="subject  subject--form">Доп</span><br>
+          <textarea name="comment" id="comment-id" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <p>&#42;Поля обязательные для заполнения</p>
+          <button class="btn">Отправить заказ</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer class="page-footer  container">
+      <ul class="page-footer__social">
+        <li><a class="social-link  social-link--in" href="#"></a></li>
+        <li><a class="social-link  social-link--fb" href="#"></a></li>
+        <li><a class="social-link  social-link--tw" href="#"></a></li>
+      </ul>
+      <p class="page-footer__copyright">
+        Разработано
+        <a class="copyright-btn" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="HTMLAcademy"></a>
+      </p>
+    </footer>
+  </body>
+</html>
