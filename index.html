@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-top  container">
@@ -27,7 +28,7 @@
     <main>
       <article class="product-week  container">
         <h2 class="title-h2">Вязаные корзинки</h2>
-        <span class="subject  subject--subtitle">Товар недели</span>
+        <span class="subject">Товар недели</span>
         <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
         <table class="product-week__table">
           <tr>
@@ -117,5 +118,19 @@
         <a class="copyright-btn" href="https://htmlacademy.ru/intensive/adaptive"><img src="#" alt="HTMLAcademy"></a>
       </p>
     </footer>
+    <div class="modal  container">
+      <button class="modal__close" type="button" title="Закрыть">Закрыть</button>
+      <h2 class="title-h2">Добавить в корзину</h2>
+      <p>Выберете размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="radio" name="size" id="s" checked>
+        <label for="s">S</label>
+        <input type="radio" name="size" id="m">
+        <label for="m">M</label>
+        <input type="radio" name="size" id="l">
+        <label for="l">L</label><br>
+        <button class="btn btn__button btn__button--color">Добавить</button>
+      </form>
+    </div>
   </body>
 </html>
