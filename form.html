@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-top  container">
@@ -21,33 +22,33 @@
       <h1 class="header-top__title">Вязание на заказ</h1>
     </header>
     <main>
-      <p class="form-text  container">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="orderform  container">
+          <p class="orderform__top">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <span class="subject  subject--form">Тип</span><br>
           <input class="orderform__radio" type="radio" name="type" id="acces" checked>
-          <label for="acces">Аксессуар для интерьера</label><br>
+          <label class="orderform__label" for="acces">Аксессуар для интерьера</label><br>
           <input class="orderform__radio" type="radio" name="type" id="child" checked>
-          <label for="child">Детская игрушка</label><br>
+          <label class="orderform__label" for="child">Детская игрушка</label><br>
           <span class="subject  subject--form">Цвет</span><br>
           <input class="orderform__checkbox" type="checkbox" name="white" id="white-id" checked>
-          <label for="white-id">Белый</label><br>
+          <label class="orderform__label" for="white-id">Белый</label><br>
           <input class="orderform__checkbox" type="checkbox" name="gray" id="gray-id" checked>
-          <label for="gray-id">Серый</label><br>
+          <label class="orderform__label" for="gray-id">Серый</label><br>
           <input class="orderform__checkbox" type="checkbox" name="tiffany" id="tiffany-id">
-          <label for="tiffany-id">&#171;Тиффани&#187;</label><br>
+          <label class="orderform__label" for="tiffany-id">&#171;Тиффани&#187;</label><br>
           <input class="orderform__checkbox" type="checkbox" name="black" id="black-id">
-          <label for="black-id">Черный</label><br>
+          <label class="orderform__label" for="black-id">Черный</label><br>
           <input class="orderform__checkbox" type="checkbox" name="pink" id="pink-id">
-          <label for="pink-id">Розовый</label><br>
+          <label class="orderform__label" for="pink-id">Розовый</label><br>
           <input class="orderform__checkbox" type="checkbox" name="orange" id="orange-id">
-          <label for="orange-id">Оранжевй</label><br>
+          <label class="orderform__label" for="orange-id">Оранжевй</label><br>
           <span class="subject  subject--form">ФИО</span><br>
-          <label for="name-id">Имя:</label><br>
+          <label class="orderform__label  orderform__label--place" for="name-id">Имя:</label><br>
           <input class="orderform__text" type="text" name="name" id="name-id" placeholder="Введите ваше имя&#42;" required><br>
-          <label for="surname-id">Фамилия:</label><br>
+          <label class="orderform__label  orderform__label--place" for="surname-id">Фамилия:</label><br>
           <input class="orderform__text" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию&#42;" required><br>
-          <label for="midname-id">Отчество:</label><br>
+          <label class="orderform__label  orderform__label--place" for="midname-id">Отчество:</label><br>
           <input class="orderform__text" type="text" name="midname" id="midname-id" placeholder="Отчество, если желаете"><br>
           <span class="subject  subject--form">Тел</span><br>
           <input class="orderform__text  orderform__text--tel" type="tel" name="tel" id="tel-id" placeholder="+7 XXX XX XX&#42;" required><br>
@@ -55,8 +56,10 @@
           <input class="orderform__text  orderform__text--email" type="email" name="e-mail" id="e-mail-id" placeholder="Ваш Email&#42;" required><br>
           <span class="subject  subject--form">Доп</span><br>
           <textarea name="comment" id="comment-id" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          <p>&#42;Поля обязательные для заполнения</p>
-          <button class="btn">Отправить заказ</button>
+          <p class="orderform__bottom">&#42;Поля обязательные для заполнения</p>
+          <div class="orderform__button">
+          <button class="btn btn__button">Отправить заказ</button>
+          </div>
         </fieldset>
       </form>
     </main>
