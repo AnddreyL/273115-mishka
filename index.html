@@ -137,7 +137,7 @@
       <h2 class="title-h2">Добавить в корзину</h2>
       <p>Выберете размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal__form-section"> 
+        <div class="modal__form-section">
           <input type="radio" name="size" id="s" checked>
           <label for="s">S</label>
           <input type="radio" name="size" id="m">
@@ -150,22 +150,19 @@
     </div>
     <script>
       var link = document.querySelector(".product-week__btn");
-      
       var popup = document.querySelector(".modal");
       var close = popup.querySelector(".modal-close");
-      
-      link.addEventListener("click", function(event)
-                            {
+
+      link.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.add("modal-show");
       });
-      
-      close.addEventListener("click", function(event)
-                             {
+
+      close.addEventListener("click", function(event) {
         event.preventDefault();
         popup.classList.remove("modal-show");
       });
-      
+
       window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
           if (popup.classList.contains("modal-show")) {
