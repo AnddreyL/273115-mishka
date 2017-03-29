@@ -1,27 +1,43 @@
 .product-week {
+  padding-top: 27px;
+
   .title-h2 {
-    margin-top: 35px;
+    margin-bottom: 4px;
   }
 
   &__text {
+    margin: 0;
     font-size: 15px;
     line-height: 24px;
     color: #444444;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 22px;
+    padding-bottom: 18px;
   }
 
   &__table {
-    padding-left: 30px;
+    margin: 0 30px;
+    width: 260px;
+    border-collapse: collapse;
   }
 
-  &__td {
+  td {
     font-size: 15px;
     line-height: 20px;
     color: #444444;
+    padding: 0;
+    height: 39px;
+    border-bottom: 1px solid #ececec;
   }
-  img {
+
+  td:first-child {
+    width: 99px;
+  }
+
+  &__img {
     padding-left: 30px;
+    padding-top: 29px;
   }
 
   &__price {
@@ -29,11 +45,125 @@
     line-height: 24px;
     font-weight: bold;
     color: #444444;
-    padding-left: 30px;
+    text-align: center;
   }
 
   .btn {
-    margin-top: 30px;
-    margin-bottom: 45px;
+    margin-top: 27px;
+    margin-bottom: 35px;
+  }
+
+  .zigzag {
+    height: 7px;
+  }
+}
+@media (min-width: 768px) {
+  .product-week {
+    padding-top: 52px;
+    position: relative;
+
+    .title-h2 {
+      display: inline-block;
+    }
+
+    .subject {
+      display: inline-block;
+      padding: 0;
+      padding-right: 75px;
+      padding-top: 11px;
+      width: 75px;
+      float: right;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 17px;
+      line-height: 30px;
+      padding-top: 45px;
+      padding-right: 0px;
+      padding-bottom: 36px;
+      padding-left: 48px;
+      width: 290px;
+    }
+
+    &__table {
+      margin: 0 0 0 49px;
+      width: 290px;
+    }
+
+    &__price {
+      display: inline-block;
+      font-size: 20px;
+      margin: 0;
+      padding-top: 56px;
+      padding-left: 51px;
+      padding-bottom: 34px;
+      width: 290px;
+    }
+
+    .btn {
+      width: 290px;
+      margin: 0 0 0 48px;
+    }
+
+    &__img {
+      position: absolute;
+      right: 50px;
+      top: 130px;
+    }
+
+    .zigzag {
+      margin-top: 52px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .product-week {
+    margin-top: 71px;
+    position: relative;
+
+    .title-h2 {
+      padding-top: 71px;
+      padding-right: 0;
+      padding-bottom: 0;
+      padding-left: 222px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .subject {
+      position: absolute;
+      padding: 0;
+      left: 95px;
+      top: 139px;
+    }
+
+    &__img {
+      position: absolute;
+      padding: 0;
+      top: 70px;
+      width: 525px;
+      heigth: 636px;
+    }
+
+    &__text {
+      padding-left: 225px;
+      padding-bottom: 48px;
+    }
+
+    &__table {
+      margin-left: 225px;
+    }
+
+    &__price {
+      padding-top: 110px;
+      padding-left: 227px;
+    }
+
+    .btn {
+      width: 290px;
+      margin-left: 225px;
+    }
   }
 }
